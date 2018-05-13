@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="50a05912020f43968786f827da403a6c" Name="Diagram1" ZoomLevel="10">
+        <EntityTypeShape EntityType="DBModel.Account" Width="1.5" PointX="0.75" PointY="25.5" />
+        <EntityTypeShape EntityType="DBModel.Article" Width="1.5" PointX="3" PointY="26.25" />
+        <EntityTypeShape EntityType="DBModel.ArticleCategory" Width="1.5" PointX="5.25" PointY="42.125" />
+        <EntityTypeShape EntityType="DBModel.ArticleMainCategory" Width="1.5" PointX="3" PointY="59.125" />
+        <EntityTypeShape EntityType="DBModel.Client" Width="1.5" PointX="3" PointY="50.125" />
+        <EntityTypeShape EntityType="DBModel.ClientCategory" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="DBModel.Common" Width="1.5" PointX="3" PointY="17.25" />
+        <EntityTypeShape EntityType="DBModel.Contact" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="DBModel.ContactCategory" Width="1.5" PointX="3" PointY="13.375" />
+        <EntityTypeShape EntityType="DBModel.Order" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="DBModel.OrderDetail" Width="1.5" PointX="0.75" PointY="5.75" />
+        <EntityTypeShape EntityType="DBModel.Picture" Width="1.5" PointX="3" PointY="40.625" />
+        <EntityTypeShape EntityType="DBModel.PictureCategory" Width="1.5" PointX="6.75" PointY="0.75" />
+        <EntityTypeShape EntityType="DBModel.PictureMainCategory" Width="1.5" PointX="3" PointY="54.75" />
+        <EntityTypeShape EntityType="DBModel.Product" Width="1.5" PointX="7.5" PointY="21.625" />
+        <EntityTypeShape EntityType="DBModel.ProductCategory" Width="1.5" PointX="5.25" PointY="23.75" />
+        <EntityTypeShape EntityType="DBModel.ProductMainCategory" Width="1.5" PointX="3" PointY="20.875" />
+        <EntityTypeShape EntityType="DBModel.sysdiagram" Width="1.5" PointX="2.75" PointY="6.75" />
+        <AssociationConnector Association="DBModel.FK_Article_Account" />
+        <AssociationConnector Association="DBModel.FK_ArticleCategory_Account" />
+        <AssociationConnector Association="DBModel.FK_ArticleMainCategory_Account" />
+        <AssociationConnector Association="DBModel.FK_Client_Account" />
+        <AssociationConnector Association="DBModel.FK_Common_Account" />
+        <AssociationConnector Association="DBModel.FK_ContactCategory_Account" />
+        <AssociationConnector Association="DBModel.FK_Picture_Account" />
+        <AssociationConnector Association="DBModel.FK_PictureMainCategory_Account" />
+        <AssociationConnector Association="DBModel.FK_ProductCategory_Account" />
+        <AssociationConnector Association="DBModel.FK_ProductMainCategory_Account" />
+        <AssociationConnector Association="DBModel.FK_Article_ArticleCategory" />
+        <AssociationConnector Association="DBModel.FK_ArticleCategory_ArticleMainCategory" />
+        <AssociationConnector Association="DBModel.FK_Product_ProductCategory" />
+        <AssociationConnector Association="DBModel.FK_ProductCategory_ProductMainCategory" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

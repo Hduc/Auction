@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="Auction_MasterPage" %>
+
+<%@ Register Src="~/UserControl/ucCSS.ascx" TagPrefix="uc1" TagName="ucCSS" %>
+<%@ Register Src="~/UserControl/ucJS.ascx" TagPrefix="uc1" TagName="ucJS" %>
+<%@ Register Src="~/UserControl/ucFooter.ascx" TagPrefix="uc1" TagName="ucFooter" %>
+<%@ Register Src="~/UserControl/ucMenuMobile.ascx" TagPrefix="uc1" TagName="ucMenuMobile" %>
+<%@ Register Src="~/UserControl/ucHeader.ascx" TagPrefix="uc1" TagName="ucHeader" %>
+<%@ Register Src="~/UserControl/ucNav.ascx" TagPrefix="uc1" TagName="ucNav" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <uc1:ucCSS runat="server" ID="ucCSS" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <%--ucMenuMobile--%>
+        <uc1:ucMenuMobile runat="server" id="ucMenuMobile" />
+
+        <div id="page">
+
+            <!-- Header -->
+            <uc1:ucHeader runat="server" id="ucHeader" />
+
+            <!-- Navigation -->
+            <uc1:ucNav runat="server" id="ucNav" />
+
+            <!-- end nav -->
+            <asp:ContentPlaceHolder ID="Content" runat="server">
+            </asp:ContentPlaceHolder>
+            <!-- Footer -->
+            <uc1:ucFooter runat="server" id="ucFooter" />
+        </div>
+
+        <%--ucJS--%>
+        <uc1:ucJS runat="server" ID="ucJS" />
+        <asp:ContentPlaceHolder ID="Footer" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
